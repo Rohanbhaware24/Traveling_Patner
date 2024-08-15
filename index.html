@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a id="logo">Logo</a>
+        <div id="search"><input type="search" placeholder="Search"></div>
+        <nav>    
+            <a href="#">About Us</a>
+            <a href="#">Something</a>
+            <a href="#">About Us</a>
+            <button>Login</button>
+        </nav>
+    </header>
+    <section>
+    <div class="home">
+        <div class="box1">
+            <h4>INPUTS</h4>
+            <div class="input-box-1">
+                <div id="arrow"><img src="location.png" style="height: 90px; width: 40px;"></div>
+                    <div>
+                        <input type="text" placeholder="From"><hr width="100%" aria-setsize="10">
+                        <input type="text" placeholder="Destaion">
+                    </div>
+                </div>
+                <div class="inf">
+                    <div><label>Age</label><input type="text" placeholder="  Age"></div>
+                    <div><label>Gender</label>
+                        <select name="Gender" id="Gender">
+                            <option value="Mail">Mail</option>
+                            <option value="Femail">Femail</option>
+                            <option value="Other">Other</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="Dis-y">
+                    <label>Disability/Problem</label><br>
+                    <select name="disability" id="disability">
+                        <option value="volvo">hdi</option>
+                        <option value="saab">xsh</option>
+                        <option value="volvo">Disability</option>
+                        <option value="saab">xsh</option>
+                        <option value="opel">Other</option>
+                      </select>
+                </div>
+                <div>
+                    <div class="no-of-people">
+                        <label>Number of people</label><br>
+                        <button type="button" id="decrease-guests">-</button>
+                        <input type="text" id="num-guests" value="1" readonly>
+                        <button type="button" id="increase-guests">+</button>
+                      </div>
+                </div>
+            </div>
+        <div class="box2">
+            <h1>MAP</h1>
+        </div>
+    </div>
+    </section>
+
+    <script>
+        document.getElementById('decrease-guests').addEventListener('click', function() {
+            let guests = parseInt(document.getElementById('num-guests').value);
+            if (guests > 1) {
+              document.getElementById('num-guests').value = guests - 1;
+            }
+          });
+        
+          document.getElementById('increase-guests').addEventListener('click', function() {
+            let guests = parseInt(document.getElementById('num-guests').value);
+            document.getElementById('num-guests').value = guests + 1;
+          });
+    </script>
+</body>
+</html>

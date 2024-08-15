@@ -1,0 +1,164 @@
+body{
+    background-color: white;
+}
+#header{
+    display: flex;
+    height: 60px;
+    /* background-color: red; */
+}
+#search{
+    margin-left: 200px;
+}
+#logo{
+    padding-top: 15px;
+}
+#search input{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 380px;
+}
+nav{
+    margin-top: 10px;
+    margin-left: 200px; 
+}
+nav a{
+    font-size: larger;
+    margin-left: 25px;
+    /* line-gap-override: 20px; */
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+nav button{
+    margin-left: 50px;
+}
+nav a:hover{
+    font-size: 13.9px;
+    text-decoration: underline;   
+}
+
+/* Section */
+.home{
+    display: flex;
+}
+.box1{
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    height: 550px;
+    width: 400px;
+    /* margin-left: 10px; */
+}
+.box2{
+    background-color: aqua;
+    width: 100%;
+}
+
+
+
+.input-box-1{
+    /* box-shadow: 2px 2px 1px 1px rgb(139, 137, 137); */
+    background-color: rgb(  236, 229, 229);
+    /* background-color: red; */
+    margin-left: 10px;
+    width: 275px;
+    /* border: 2px solid black; */
+    height: 90px;
+    display: flex;
+    /* background-color: pink; */
+}
+#arrow{
+    mix-blend-mode: multiply;
+}
+.input-box-1 input{
+    /* background-color: red; */
+    background-color: rgb(236, 229, 229);
+    border: none;
+    margin-top: 10px;
+    height: 20px;
+    width: 230px;
+}
+
+
+.inf{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+}
+.inf label{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.inf input{
+    background-color: rgb(236, 229, 229);
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+.inf select{
+    background-color: rgb(236, 229, 229);
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+.Dis-y{
+    /* display: flex; */
+    margin-top: 10px;
+}
+.Dis-y label{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.Dis-y select{
+    margin-left: 10px;
+    background-color: rgb(236, 229, 229);
+    width: 270px;
+    height: 40px;
+    /* margin-left: 10px; */
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+
+.no-of-people {
+    margin-top: 10px;
+  }
+
+  .no-of-people label {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  
+  .no-of-people button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  
+  .no-of-people input {
+    text-align: center;
+    background-color: rgb(236, 229, 229);
+    width: 150px;
+    height: 30px;
+    /* margin-left: 10px; */
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+  }
