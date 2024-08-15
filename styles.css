@@ -104,6 +104,9 @@ nav a:hover{
     /* border: 2px solid black; */
     border-radius: 10px;
 }
+.inf input:hover{
+    border: 1px solid rgb(190, 158, 158);
+}
 .inf select{
     background-color: rgb(236, 229, 229);
     width: 100px;
@@ -113,6 +116,29 @@ nav a:hover{
     /* border: 2px solid black; */
     border-radius: 10px;
 }
+#way{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    /* padding-bottom: 10px; */
+}
+.T-way{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.T-way .chb{
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 20px;
+    width: 50px;
+    font-size: 18px;
+    background-color: rgb(236, 229, 229);
+}
+.T-way input{
+    margin-top: 10px;
+}
+
 .Dis-y{
     /* display: flex; */
     margin-top: 10px;
@@ -137,28 +163,43 @@ nav a:hover{
 
 .no-of-people {
     margin-top: 10px;
-  }
+}
 
-  .no-of-people label {
+.no-of-people label {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 2px;
     padding-left: 10px;
-  }
+}
   
-  .no-of-people button {
+.no-of-people button {
+    margin-top: 10px;
+    /* margin-left: 10px; */
     width: 30px;
     height: 30px;
     font-size: 20px;
-  }
+}
   
-  .no-of-people input {
+.no-of-people input {
     text-align: center;
     background-color: rgb(236, 229, 229);
-    width: 150px;
+    width: 190px;
     height: 30px;
     /* margin-left: 10px; */
     border: none;
     /* border: 2px solid black; */
     border-radius: 10px;
-  }
+}
+
+.bt-on button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 80px;
+    margin-top: 15px;   
+    background-color: rgb(236, 229, 229);
+}
+.bt-on button:hover {
+    background-color: rgb(190, 158, 158);
+}
