@@ -33,12 +33,19 @@
                     <div><label>Age</label><input type="text" placeholder="  Age"></div>
                     <div><label>Gender</label>
                         <select name="Gender" id="Gender">
-                            <option value="Mail">Mail</option>
-                            <option value="Femail">Femail</option>
+                            <option value="Mail">Male</option>
+                            <option value="Femail">Female</option>
                             <option value="Other">Other</option>
                           </select>
                     </div>
                 </div>
+            <div class="T-way">
+                <label id="way">Way</label><br> 
+                      <label class="chb">Train<input type="checkbox" checked="checked"></label>
+                      <label class="chb">Bus<input type="checkbox"></label>
+                      <label class="chb">Aeroplane<input type="checkbox"></label>
+                      <label class="chb">Other<input type="checkbox"></label>
+            </div>
                 <div class="Dis-y">
                     <label>Disability/Problem</label><br>
                     <select name="disability" id="disability">
@@ -55,7 +62,10 @@
                         <button type="button" id="decrease-guests">-</button>
                         <input type="text" id="num-guests" value="1" readonly>
                         <button type="button" id="increase-guests">+</button>
-                      </div>
+                    </div>
+                </div>
+                <div class="bt-on">
+                    <button>Submit</button>
                 </div>
             </div>
         <div class="box2">
@@ -70,8 +80,7 @@
             if (guests > 1) {
               document.getElementById('num-guests').value = guests - 1;
             }
-          });
-        
+          }); 
           document.getElementById('increase-guests').addEventListener('click', function() {
             let guests = parseInt(document.getElementById('num-guests').value);
             document.getElementById('num-guests').value = guests + 1;
